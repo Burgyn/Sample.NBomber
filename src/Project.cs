@@ -1,0 +1,1 @@
+﻿internal record Project(int Id);

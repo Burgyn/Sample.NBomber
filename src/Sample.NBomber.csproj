@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <ServerGarbageCollection>true</ServerGarbageCollection>
+    <ConcurrentGarbageCollection>true</ConcurrentGarbageCollection>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="NBomber" Version="2.1.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="reports\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Remove="reports\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="reports\**" />
+  </ItemGroup>
+
+</Project>
